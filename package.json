@@ -1,0 +1,30 @@
+{
+  "name": "image-search-abstraction-layer",
+  "version": "0.0.1",
+  "description": "API to search for images.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "body-parser": "^1.19.0",
+    "mongoose": "^5.5.12",
+    "axios": "^0.19.0"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atiyahaider/Image-Search"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "express",
+    "mongoose",
+    "image search"
+  ],
+  "homepage": "https://github.com/atiyahaider/Personal-Library#readme"
+}
