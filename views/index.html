@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image Search Abstraction Layer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="/public/style.css">
+  </head>
+  
+  <body>
+    <div id="container">
+      <header>
+        <h1>Image Search Abstraction Layer</h1>
+      </header>
+
+      <main>
+        <h2>User Stories</h2>
+        <ul>
+          <li>Get the image URLs, snippets, thumbnails, and page URLs for a set of images relating to a given search string.</li>
+          <li>Paginate through the responses by adding an '?offset=2' parameter to the URL.</li>
+          <li>Get a list of the most recently submitted search strings.</li>
+        </ul>
+
+        <h2>Example API Routes</h2>
+        <ul>
+          <li>Search for images: <br>
+            <a href="https://daffy-pamphlet.glitch.me/api/imagesearch/lolcats%20funny?offset=10" target="blank">https://daffy-pamphlet.glitch.me/api/imagesearch/lolcats%20funny?offset=10</a>
+          </li>
+          <li>Browse for recent search queries: <br>
+            <a href="https://daffy-pamphlet.glitch.me/api/latest/imagesearch" target="blank">https://daffy-pamphlet.glitch.me/api/latest/imagesearch</a>
+          </li>
+        </ul>
+        
+        <h2>Try it out...</h2>
+        <div id="form">
+          <form method="post" action="">
+            <input id="searchVal" name="searchVal" type="text" maxlength="200" size="50" placeholder="Search for an image..." required>
+            <input id="offset" name="offset" type="number" min="1" max="10" size="50" placeholder="Enter page offset (optional)">
+            <button id="submit">Search</button>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          Designed and Coded by:
+        <a target="_blank" href="https://s.codepen.io/atiyahaider/debug/oaZxeb/dGrXWdOKgPWM">Atiya Haider</a>
+        </p>
+      </footer>
+    </div>
+    
+    <script src="/public/client.js"></script>
+  </body>
+</html>
+
