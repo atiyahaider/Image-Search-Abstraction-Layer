@@ -12,7 +12,11 @@ module.exports = {
         }
 
         // Connect to the database
-        mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true}, connected);
+        mongoose.connect(process.env.MONGO_URI, 
+                         {useNewUrlParser: true,
+                          useUnifiedTopology: true,
+                          useCreateIndex: true}, 
+                         connected);
 
         function connected(err, db) {
             if (err) 
